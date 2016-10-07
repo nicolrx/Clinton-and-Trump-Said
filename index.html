@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Clinton and Trump Said...</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+	
+	<!-- Wrapper -->
+	<div id="wrapper">
+	
+	<!-- Banner -->
+		<section id="banner" class="major">
+			<div class="inner">
+				<div id="text-head">
+					<div id="sponsor">
+						<a href="http://www.algolia.com/?utm_source=clintonandtrumpsaid.con&amp;utm_medium=link&amp;utm_campaign=Next_President"><span>Powered by </span><img src="images/algolia-dark.png" alt="Algolia" /></a>
+					</div>
+					<header class="major">
+						<h1>Clinton and Trump Said...</h1>
+					</header>
+					<div class="content">
+						<p>A search engine for Youtube captions to find what American presidential candidates are saying about any topic.</p>
+					</div>
+				</div>
+				<div class="img">
+						<img src="images/house-of-cards.png" alt="House Of Cards" />
+				</div>
+				<div id="search-container">
+					<div id="search-input"></div>
+				</div>	
+			</div>
+		</section>
+		
+		<!-- TEMPLATES -->
+		<script type="text/html" id="hit-template"> 
+			<a href="{{url}}" class="link" style="background-image:url('{{{img}}}');" target="_blank">
+				<header class="major">
+					<h5>{{title}}</h5>
+					<p>{{{_highlightResult.content.value}}}</p>
+				</header>
+				<div id="tag">{{id}}</div>
+				</a>
+		</script>
+		<script type="text/html" id="no-results-template">
+			<div id="no-results-message">
+				<p>We didn't find any results for the search <em>"{{query}}"</em>.</p>
+			</div>
+		</script>
+  		<!-- /TEMPLATES -->
+
+	<div id="candidate"></div>
+	<!-- Main -->
+		<div id="main">
+			<section id="results" id="one" class="tiles"></section>
+      			<div id="pagination"></div>
+		</div>
+	
+	<!-- Footer -->
+	<footer>
+		<div class="inner">
+			<ul class="icons">
+				<li><a href="#" class="icon alt fa-product-hunt"><span class="label">Twitter</span></a></li>
+				<li><a href="https://twitter.com/home?status=Search%20what%20%40HillaryClinton%20and%20%40realDonaldTrump%20said%20about%20any%20topic%20%3E%3E%20http%3A//www.clintonandtrumpsaid.com%20" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.clintonandtrumpsaid.com" target="_blank" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+			</ul>
+			<p><span>Made with <3 by </span><a href="http://www.twitter.com/nico_lrx" title="nico_lrx">nico_lrx</a><span> with</span><a href="https://community.algolia.com/instantsearch.js/?utm_source=clintonandtrumpsaid.com&amp;utm_medium=link&amp;utm_campaign=Next_President" target="_blank"><img src="images/logo-instantsearch.svg" alt="Algolia Instant Search" /></a></p>
+		</div>
+	</footer>
+
+<!-- Scripts -->
+	<script src="http://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
+	<script src="assets/js/app.js"></script>
+	
+	<!-- change GA -->
+	<script> 
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-78292519-1', 'auto');
+	ga('send', 'pageview');
+
+	</script>
+<!-- /SCRIPTS --> 
+
+	</body>
+</html>
